@@ -1,10 +1,11 @@
 {
   "author": {
-    "name": "NAME",
-    "email": "NAME@users.noreply.github.com"
+    "name": "bill1812",
+    "email": "bill1812@users.noreply.github.com"
   },
+  "bin": "",
   "bugs": {
-    "url": "https://github.com/ACCOUNT/project/issues"
+    "url": "https://github.com/bill1812/acompass/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -22,24 +23,33 @@
   "deprecated": false,
   "description": "Express Skeleton Website by gen4node for hjs and node-compass",
   "devDependencies": {},
+  "directories": {
+    "bin": "./bin",
+    "public": "./public",
+    "routes": "./routes",
+    "scss": "./scss",
+    "views": "./views"
+  },
   "engines": {
     "node": ">=8.12.0"
   },
   "files": [
-    "LICENSE.md",
-    "README.md"
+    "LICENSE",
+    "README.md",
+    "app.js"
   ],
-  "homepage": "https://github.com/ACCOUNT",
+  "homepage": "https://github.com/bill1812",
   "keywords": [
     "gen4node",
     "node"
   ],
   "license": "UNLICENSED",
+  "main": "",
   "name": "acompass",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/ACCOUNT/project.git"
+    "url": "git://github.com/bill1812/acompass.git"
   },
   "scripts": {
     "start": "node ./bin/www"
