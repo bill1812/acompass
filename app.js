@@ -24,8 +24,22 @@ var mimeTIE = 'text/html';
 // app.uses
 app.use(compression());
 app.use(logger('dev' /* options: immediate, skip, stream, combined, common, [dev], short, tiny */ ));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json({
+  inflate: true,
+  limit: '100kb',
+  reviver: null,
+  strict: true,
+  type: 'application/json',
+  verify: undefined
+}));
+app.use(express.urlencoded({
+  extended: false,
+  inflate: true,
+  limit: '100kb',
+  parameterLimit: 1000,
+  type: 'application/x-www-form-urlencoded',
+  verify: undefined
+}));
 app.use(cookieParser());
 app.use(function (req, res, next) {
   var cookie = req.cookies.cookieName;
